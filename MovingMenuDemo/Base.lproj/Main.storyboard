@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,14 +27,30 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYq-uB-ri2">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObV-Tr-EaB">
-                                                <rect key="frame" x="173" y="879" width="29" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll end" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObV-Tr-EaB">
+                                                <rect key="frame" x="149" y="879" width="77" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-7m-rUr">
-                                                <rect key="frame" x="169" y="30" width="36" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-7m-rUr">
+                                                <rect key="frame" x="37.5" y="30" width="300" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="DFr-YB-zf8"/>
+                                                </constraints>
+                                                <string key="text">Scroll Start Click Open to bring up the menu.
+ 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euZ-Uk-s4U">
+                                                <rect key="frame" x="37.5" y="439" width="300" height="122"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="7go-qN-Z6F"/>
+                                                </constraints>
+                                                <string key="text">Some Contents are here. if you want edit submenu on storyboard, click on 'menu view scene' and change the y position from 1020 to 720 in 'view' of 'show the size inspector'.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -43,9 +59,11 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="ObV-Tr-EaB" secondAttribute="bottom" constant="100" id="175-Fg-caN"/>
+                                            <constraint firstItem="euZ-Uk-s4U" firstAttribute="centerX" secondItem="EYq-uB-ri2" secondAttribute="centerX" id="RXP-no-vWb"/>
                                             <constraint firstAttribute="height" constant="1000" id="Zbz-5V-KGE"/>
                                             <constraint firstItem="ObV-Tr-EaB" firstAttribute="centerX" secondItem="EYq-uB-ri2" secondAttribute="centerX" id="iCu-Sn-Jll"/>
                                             <constraint firstItem="7nI-7m-rUr" firstAttribute="centerX" secondItem="EYq-uB-ri2" secondAttribute="centerX" id="iYH-p1-s0O"/>
+                                            <constraint firstItem="euZ-Uk-s4U" firstAttribute="centerY" secondItem="EYq-uB-ri2" secondAttribute="centerY" id="ihH-bQ-8aP"/>
                                             <constraint firstItem="7nI-7m-rUr" firstAttribute="top" secondItem="EYq-uB-ri2" secondAttribute="top" constant="30" id="mdg-UN-jWd"/>
                                         </constraints>
                                     </view>
@@ -84,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="1020" width="375" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIO-ly-g8W">
-                                        <rect key="frame" x="146" y="30" width="83" height="52"/>
+                                        <rect key="frame" x="146.5" y="30" width="82" height="52"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                         <state key="normal" title="Close">
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
