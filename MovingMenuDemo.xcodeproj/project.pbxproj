@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB5506B21F8A639C0014F810 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ABFBB6A31F5FBAC1000F81CF /* MovingMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovingMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFBB6A61F5FBAC1000F81CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFBB6A81F5FBAC1000F81CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		ABFBB69A1F5FBAC1000F81CF = {
 			isa = PBXGroup;
 			children = (
+				AB5506B21F8A639C0014F810 /* README.md */,
 				ABFBB6A51F5FBAC1000F81CF /* MovingMenuDemo */,
 				ABFBB6BA1F5FBAC1000F81CF /* MovingMenuDemoTests */,
 				ABFBB6C51F5FBAC1000F81CF /* MovingMenuDemoUITests */,
@@ -516,6 +518,7 @@
 				ABFBB6CD1F5FBAC1000F81CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABFBB6CE1F5FBAC1000F81CF /* Build configuration list for PBXNativeTarget "MovingMenuDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +527,7 @@
 				ABFBB6D01F5FBAC1000F81CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABFBB6D11F5FBAC1000F81CF /* Build configuration list for PBXNativeTarget "MovingMenuDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +536,7 @@
 				ABFBB6D31F5FBAC1000F81CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
